@@ -1,4 +1,4 @@
-var GameRules = "A simple memory game. No rules really needed.\nWritten in HTML, CSS and JavaScript.";
+var GameRules = "A simple memory game. No rules really needed.\nWritten in HTML, CSS, JavaScript, jQuery.\nAll trademarks and art belong to Ubisoft.";
 
 var cards_all = []; // initialize the array of card**.png names
 
@@ -47,12 +47,26 @@ shuffle(cards); // the last random shuffle of the array of card names
 
 //console.log(cards); // for debugging
 
+// *********** Auto-generate divs ************ //
+
+var board_html = "";
+
+for(x=0; x<=17; x++)
+{
+	board_html += '<div class="card" id="c'+x+'"></div>\n'; // concatenate for more performance
+}
+
+$('.board').html( board_html );
+
+//console.log(x);
+
+// ******************************************* //
+
 x = 17; // card id = c0 - c17
 
 do
 {
-	let z = "c" + x;
-	document.getElementById( z ).addEventListener("click", ( function(c) { return function() {  revealCard( c ); } } )(x) );
+	document.getElementById( "c" + x ).addEventListener("click", ( function(c) { return function() {  revealCard( c ); } } )(x) );
 	// a function inside a function which returns a function
 }
 while(x--)
@@ -79,7 +93,7 @@ function revealCard(nr)
 		
 		var cardimg = 'url("img/' + cards[nr] + '")';
 		// global function jQuery = $() or jQuery()
-		$('#c'+nr).css('background-image', cardimg);
+		setTimeout( function() { $('#c'+nr).css('background-image', cardimg); }, 150 ); // inline function invoking a delayed change of the image
 		$('#c'+nr).addClass('cardA'); // adds a Class to one already existing
 		$('#c'+nr).removeClass('card'); // removes already existing class
 		
@@ -134,12 +148,14 @@ function hide2cards(nr1,nr2) // function to hide both uncovered cards when they 
 
 function restore2cards(nr1,nr2) // function to restore both cards if they were not identical
 {
-	$('#c'+nr1).css('background-image', 'url("img/accard.png")');
+	setTimeout( function() { $('#c'+nr1).css('background-image', 'url("img/accard.png")'); }, 150 ); // inline function invoking a delayed change of the image
 	$('#c'+nr1).addClass('card'); // adds a Class to one already existing
 	$('#c'+nr1).removeClass('cardA'); // removes already existing class
-	$('#c'+nr2).css('background-image', 'url("img/accard.png")');
+
+	setTimeout( function() { $('#c'+nr2).css('background-image', 'url("img/accard.png")'); }, 150 ); // inline function invoking a delayed change of the image
 	$('#c'+nr2).addClass('card'); // adds a Class to one already existing
 	$('#c'+nr2).removeClass('cardA'); // removes already existing class
+
 	lock = false;
 	cardId = "";
 	turnCounter++;
