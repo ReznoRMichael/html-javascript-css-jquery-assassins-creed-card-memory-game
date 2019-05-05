@@ -32,7 +32,7 @@ body
 	background-color: #0b0b0b;
 	color: #fff;
     font-family: 'Muli', sans-serif;
-    font-size: 20px;
+	font-size: 20px;
 }
 
 a:link    { color: #e8b156; text-decoration: none; }
@@ -111,10 +111,6 @@ p
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,1);
-}
-.card img
-{
-	transition: all 0.3s ease-in-out;
 }
 .card:hover 
 {
