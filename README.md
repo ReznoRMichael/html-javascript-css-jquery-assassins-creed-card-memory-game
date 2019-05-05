@@ -10,7 +10,7 @@
 * [Contact](#contact)
 
 ## General info
-This little game I've created as a small birthday gift to my brother, who likes Assassin's Creed game series. It's written in HTML/CSS/JavaScript and uses jQuery. The custom screenshots for the cards are made by me. The original project is based on the idea present in the JavaScript course from Pasja Informatyki ( [Link](https://www.youtube.com/watch?v=edNqTubHUU0) ) however I improved it and rewritten the code to include more features and be less redundant.
+This little game I've created as a small birthday gift to my brother, who likes Assassin's Creed game series. It's written in HTML/CSS/JavaScript and uses jQuery. The custom screenshots for the cards are made by me. The original project is based on the idea present in the JavaScript course from Pasja Informatyki ( [Link](https://www.youtube.com/watch?v=edNqTubHUU0) ) however I improved it and rewritten the code to include more features and be less redundant. Features random array shuffling using the Fisher-Yates algorithm in pure JavaScript - [Link](https://bost.ocks.org/mike/shuffle/).
 
 ## Screenshots
 ![Example screenshot](./img/screen1.jpg)
@@ -21,9 +21,9 @@ This little game I've created as a small birthday gift to my brother, who likes 
 * JavaScript
 * jQuery 3.4.1
 * html5shiv 3.7.3
+* Google Fonts (Muli)
 
 ## Features
-List of features ready and TODOs for future development
 * Board of 18 cards (9 pairs)
 * Card images for pairs are randomly choosen each restart from a base of 34 total (it's easy to add more)
 * Custom graphics (includes my own screenshots)
