@@ -26,6 +26,7 @@ This little game I've created as a small birthday gift to my brother, who likes 
 ## Features
 * Board of 18 cards (9 pairs)
 * Card images for pairs are randomly choosen each restart from a base of 34 total (it's easy to add more)
+* Random array shuffling using the Fisher-Yates algorithm in pure JavaScript
 * Custom graphics (includes my own screenshots)
 * Card mouse hover effects
 * Card clicking animations
@@ -46,7 +47,7 @@ To-do list:
 * Add transition animation (FadeIn) for the card images
 
 ## Inspiration
-Project inspired by my brother, based on the Assassin's Creed game series by Ubisoft. All trademarks and art are part of Ubisoft.
+Project inspired by my brother, Pasja Informatyki, based on the Assassin's Creed game series by Ubisoft. All trademarks and art are part of Ubisoft.
 
 ## Contact
 Written by [ReznoRMichael](https://github.com/ReznoRMichael)
