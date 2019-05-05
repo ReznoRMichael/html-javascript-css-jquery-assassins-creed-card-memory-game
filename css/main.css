@@ -82,14 +82,22 @@ p
 }
 #game
 {
-	position: absolute;
+	position: relative;
 	z-index: 1000;
-	left: 50%;
-	top: 50%;
-	width: 1000px;
-	height: 640px;
-	margin-left: -500px;
-	margin-top: -320px;
+	max-width: 1000px;
+}
+@media screen and (min-width: 1080px)
+{
+	#game
+	{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 1000px;
+		height: 640px;
+		margin-left: -500px;
+		margin-top: -320px;
+	}
 }
 .board
 {
@@ -104,6 +112,9 @@ p
 	display: inline-block;
 	margin: 3px;
 	background-image: url("../img/accard.png");
+	background-size: auto 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
 	border: 4px solid #364757;
 	border-radius: 0 15px 0 15px;
 	cursor: pointer;
@@ -114,7 +125,8 @@ p
 }
 .card:hover 
 {
-	border: 4px solid #604a23;
+	border-style: solid;
+	border-color: #604a23;
 	filter: brightness(120%);
 }
 .cardA
@@ -124,6 +136,9 @@ p
 	display: inline-block;
 	margin: 3px;
 	background-image: url("../img/accard.png");
+	background-size: auto 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
 	border: 4px solid #604a23;
 	border-radius: 15px 0 15px 0;
 	cursor: default;
@@ -145,4 +160,34 @@ p
 	text-align: center;
 	display: inline-block;
 	margin-top: 10px;
+}
+.wonmsg
+{
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 3px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 1079px)
+{
+	body
+	{
+		font-size: 0.7em;
+	}
+	h1.intro
+	{
+		font-size: 1.6em;
+	}
+	.wonmsg
+	{
+		font-size: 2em;
+	}
+	.card, .cardA
+	{
+		width: 70px;
+		height: 70px;
+		border-width: 1px;
+	}
 }

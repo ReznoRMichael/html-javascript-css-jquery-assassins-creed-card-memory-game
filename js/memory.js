@@ -135,7 +135,7 @@ function hide2cards(nr1,nr2) // function to hide both uncovered cards when they 
 	{
 		turnCounter++;
 		$('.score').html('');
-		$('.board').html('<h1>You\'ve won!<br>Assassin has finished the game in <span style="color:#f6a225">'+turnCounter+'</span> turns.<br>To play again, restart the game:</h1>');
+		$('.board').html('<p class="wonmsg">You\'ve won!<br>Assassin has finished the game in <span style="color:#f6a225">'+turnCounter+'</span> turns.<br>To play again, restart the game:</p>');
 	}
 	else
 	{
