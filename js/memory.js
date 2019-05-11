@@ -1,11 +1,16 @@
 var GameRules = "A simple memory game. No rules really needed.\nWritten in HTML, CSS, JavaScript, jQuery.\nAll trademarks and art belong to Ubisoft.";
 
 var cards_all = []; // initialize the array of card**.png names
+var cards_all_preload = [];
+var images = [];
 
 for (var i=1; i<=34; i++) // << the number of total card image files (card**.png) in the folder img/
 {
 	let m = "card" + i + ".png"; // create the image file names
 	cards_all.push( m ); // push the image file name to the array
+	cards_all_preload.push( "img/" + m ); // push the image file name to the array
+	images[i-1] = new Image();
+	images[i-1].src = cards_all_preload[i-1];
 }
 
 /* *********** pure JavaScript array random shuffling function *********** */
