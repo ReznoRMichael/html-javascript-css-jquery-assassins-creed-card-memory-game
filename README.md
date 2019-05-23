@@ -1,7 +1,9 @@
 # HTML/CSS/JavaScript - Assassin's Creed Card Memory Game
+
 > A simple card memory game inspired by my brother, Pasja Informatyki and Assassin's Creed game series. Link to live version: [Link](https://reznor.tech/projects/ac-card-memory-game/game.html)
 
 ## Table of contents
+
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
@@ -10,12 +12,15 @@
 * [Contact](#contact)
 
 ## General info
+
 This little game I've created as a small birthday gift to my brother, who likes Assassin's Creed game series. It's written in HTML/CSS/JavaScript and uses jQuery, media queries for mobile devices. The custom screenshots for the cards are made by me. The original project is based on the idea present in the JavaScript course from Pasja Informatyki ( [Link](https://www.youtube.com/watch?v=edNqTubHUU0) ) however I improved it's look, added transition effects, and rewritten the code to include more features, get rid of bugs, and be less redundant. Features random array shuffling using the Fisher-Yates algorithm in pure JavaScript - [Link](https://bost.ocks.org/mike/shuffle/). Runs even on IE11.
 
 ## Screenshots
-![Example screenshot](./img/screen1.jpg) 
+
+![Example screenshot](./img/screen1.jpg)
 
 ## Technologies
+
 * HTML5
 * CSS
 * JavaScript
@@ -24,6 +29,7 @@ This little game I've created as a small birthday gift to my brother, who likes 
 * Google Fonts (Muli)
 
 ## Features
+
 * Board of 18 cards (9 pairs)
 * Card images for pairs are randomly choosen each restart from a base of 34 total (it's easy to add more)
 * Random array shuffling using the Fisher-Yates algorithm in pure JavaScript
@@ -39,6 +45,7 @@ This little game I've created as a small birthday gift to my brother, who likes 
 * Uses media queries for mobile devices (1080px width and less)
 
 To-do list:
+
 * ~~Center the game in the browser window~~
 * ~~Make it more mobile-friendly~~
 * ~~Auto-generate the card divs in HTML~~
@@ -50,7 +57,9 @@ To-do list:
 * recreate the page instead of reloading
 
 ## Inspiration
+
 Project inspired by my brother, Pasja Informatyki, based on the Assassin's Creed game series by Ubisoft. All trademarks and art are part of Ubisoft.
 
 ## Contact
-Written by [ReznoRMichael](https://github.com/ReznoRMichael) 
+
+Written by [ReznoRMichael](https://github.com/ReznoRMichael)

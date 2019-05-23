@@ -8,9 +8,9 @@ for (var i=1; i<=34; i++) // << the number of total card image files (card**.png
 {
 	let m = "card" + i + ".png"; // create the image file names
 	cards_all.push( m ); // push the image file name to the array
-	cards_all_preload.push( "img/" + m ); // push the image file name to the array
-	images[i-1] = new Image();
-	images[i-1].src = cards_all_preload[i-1];
+	cards_all_preload.push( "img/" + m ); // push the image file name to the array (for preloading)
+	images[i-1] = new Image(); // new Image object to be stored in an array (for preloading)
+	images[i-1].src = cards_all_preload[i-1]; // point to the source path of the image on the disk/server to preload
 }
 
 /* *********** pure JavaScript array random shuffling function *********** */
