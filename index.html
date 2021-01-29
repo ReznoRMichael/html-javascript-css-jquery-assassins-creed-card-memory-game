@@ -13,8 +13,8 @@
 
 	<meta property="og:title" content="Assassin's Creed Card Memory Game by rezno[R]">
 	<meta property="og:description" content="JavaScript Card Memory Game inspired by Assassin's Creed">
-	<meta property="og:image" content="https://reznor.tech/projects/ac-card-memory-game/favicon.png">
-	<meta property="og:url" content="https://reznor.tech">
+	<meta property="og:image" content="http://reznortech.rf.gd/projects/ac-card-memory-game/favicon.png">
+	<meta property="og:url" content="http://reznortech.rf.gd">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta property="og:site_name" content="rezno[R].tech">
 	<meta name="twitter:image:alt" content="JavaScript Card Memory Game inspired by Assassin's Creed">
@@ -24,24 +24,31 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli:400,700&amp;subset=latin-ext" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136831794-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136831794-2"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
+
+		// Default no consent to share cookie data
+		gtag('consent', 'default', {
+			'ad_storage': 'denied',
+			'analytics_storage': 'denied'
+		});
+
 		gtag('js', new Date());
 
-		gtag('config', 'UA-136831794-1');
+		gtag('config', 'UA-136831794-2');
 	</script>
 	
 	<script src="cookiealert/cookiealert_1_2.js"></script><script>CookieAlert.init();</script>
 	
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
      (adsbygoogle = window.adsbygoogle || []).push({
           google_ad_client: "ca-pub-9831219036017184",
           enable_page_level_ads: true
      });
-	</script>
+	</script> -->
 	
 	<!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -57,7 +64,7 @@
 		<header>
 		
 			<h1 class="intro">Assassin's Creed Card Memory Game</h1>
-			<p>inspired by Assassin's Creed series, written by <a href="https://reznor.tech" target="_blank">rezno[R]</a></p>
+			<p>inspired by Assassin's Creed series, written by <a href="http://reznortech.rf.gd" target="_blank">rezno[R]</a></p>
 		
 		</header>
 		
