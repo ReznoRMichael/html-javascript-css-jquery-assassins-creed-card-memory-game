@@ -4,12 +4,14 @@
 
 ## Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Features](#features)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+- [HTML/CSS/JavaScript - Assassin's Creed Card Memory Game](#htmlcssjavascript---assassins-creed-card-memory-game)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Inspiration](#inspiration)
+  - [Contact](#contact)
 
 ## General info
 
@@ -21,40 +23,40 @@ This little game I've created as a small birthday gift to my brother, who likes 
 
 ## Technologies
 
-* HTML5
-* CSS
-* JavaScript
-* jQuery 3.4.1
-* html5shiv 3.7.3
-* Google Fonts (Muli)
+- HTML5
+- CSS
+- JavaScript
+- jQuery 3.4.1
+- html5shiv 3.7.3
+- Google Fonts (Muli)
 
 ## Features
 
-* Board of 18 cards (9 pairs)
-* Card images for pairs are randomly choosen each restart from a base of 34 total (it's easy to add more)
-* Random array shuffling using the Fisher-Yates algorithm in pure JavaScript
-* Custom graphics (includes my own screenshots)
-* Card mouse hover effects
-* Card clicking animations
-* Turn counter
-* Rules/Restart buttons
-* Winning message shows the total turn count it took for the player
-* Built-in check prevents user from uncovering more than 2 cards at once
-* Built-in check prevents user from clicking the same card twice
-* Auto-generated inner HTML for divs and Event Listeners
-* Uses media queries for mobile devices (1080px width and less)
+- Board of 18 cards (9 pairs)
+- Card images for pairs are randomly choosen each restart from a base of 34 total (it's easy to add more)
+- Random array shuffling using the Fisher-Yates algorithm in pure JavaScript
+- Custom graphics (includes my own screenshots)
+- Card mouse hover effects
+- Card clicking animations
+- Turn counter
+- Rules/Restart buttons
+- Winning message shows the total turn count it took for the player
+- Built-in check prevents user from uncovering more than 2 cards at once
+- Built-in check prevents user from clicking the same card twice
+- Auto-generated inner HTML for divs and Event Listeners
+- Uses media queries for mobile devices (1080px width and less)
 
 To-do list:
 
-* ~~Center the game in the browser window~~
-* ~~Make it more mobile-friendly~~
-* ~~Auto-generate the card divs in HTML~~
-* Add a scoreboard
-* Add a timer
-* Add nick entry
-* Add difficulty levels? (more pairs)
-* ~~Delay transition animation for the card images~~
-* recreate the page instead of reloading
+- ~~Center the game in the browser window~~
+- ~~Make it more mobile-friendly~~
+- ~~Auto-generate the card divs in HTML~~
+- Add a scoreboard
+- Add a timer
+- Add nick entry
+- Add difficulty levels? (more pairs)
+- ~~Delay transition animation for the card images~~
+- recreate the page instead of reloading
 
 ## Inspiration
 
