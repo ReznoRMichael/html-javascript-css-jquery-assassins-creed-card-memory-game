@@ -1,6 +1,6 @@
 # HTML/CSS/JavaScript - Assassin's Creed Card Memory Game
 
-> A simple card memory game inspired by my brother, Pasja Informatyki and Assassin's Creed game series. Link to live version: [Link](http://reznortech.rf.gd/projects/ac-card-memory-game/game.html)
+> A simple card memory game inspired by my brother, Pasja Informatyki and Assassin's Creed game series. Link to live version: [Link](http://reznortech.rf.gd/projects/ac-card-memory-game/)
 
 ## Table of contents
 
